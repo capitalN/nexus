@@ -31,14 +31,15 @@ export default function Charecters() {
       >
         {CHAR.map((character, i) => (
           <Loading>
-            <Box key={i} {...BorderStyle} overflow="hidden">
+            <Box
+              key={i}
+              {...BorderStyle}
+              overflow="hidden"
+              as={Link}
+              to={`${character.id}`}
+            >
               <Image src={character.image} w="100%" />
-              <Button
-                {...ButtonStyle}
-                w="100%"
-                as={Link}
-                to={`${character.id}`}
-              >
+              <Button {...ButtonStyle} w="100%">
                 {character.name}
               </Button>
             </Box>

@@ -32,10 +32,10 @@ export default function Navbar() {
       </Box>
       <Button
         {...ButtonStyle}
-        colorScheme="blackAlpha"
         as={Link}
         to="/characters"
         justifySelf={"right"}
+        colorScheme="red"
       >
         CHARACTERS
       </Button>
