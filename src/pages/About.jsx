@@ -1,9 +1,9 @@
-import React from 'react'
+import { Center, Heading, Stack, Text ,Box,Image,VStack} from '@chakra-ui/react'
 
 export default function About() {
   return (
-    <div>
+    <Center minH="100vh">
       
-    </div>
+    </Center>
   )
 }

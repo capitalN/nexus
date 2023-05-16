@@ -22,7 +22,7 @@ import {
   
   export default function Footer() {
     return (
-      <Box p="40px">
+      <Box p="40px" color={"white"} style={{"background": "linear-gradient(0deg, rgba(53,197,175,1) 35%, rgba(0,117,188,1) 100%)"}}>
         <Grid
           gridTemplateColumns={{
             base: "repeat(1, 1fr)",
@@ -32,15 +32,15 @@ import {
           gap="40px"
         >
           <Stack gap="20px" justify={"space-around"}>
-            <Stack>
-              <Heading fontFamily={"inherit"}>nikhil angolkar</Heading>
-              <Text>angolkarnikhil@gmail.com</Text>
-              <Text>+91 7795334086</Text>
-              <Text>Nikhil Angolkar | LinkedIN</Text>
+            <Stack fontSize="25px">
+              <Heading fontFamily={"inherit"} fontSize="100px">Nexus Media</Heading>
+              <Text>nexusmedia@gmail.com</Text>
+              <Text>+91 000-000-0000</Text>
+              <Text>Address</Text>
               <Text>Belgaum, Karnataka</Text>
             </Stack>
   
-            <ButtonGroup colorScheme={"messenger"}>
+            <ButtonGroup colorScheme={"messenger"} gap="10px">
               {SocialLinks.map(({ icon, name, href }, i) => (
                 <Button
                   boxSize="50px"
@@ -52,17 +52,14 @@ import {
                 </Button>
               ))}
             </ButtonGroup>
-  
-            <Stack gap="10px">
-           
-            </Stack>
           </Stack>
   
           <form
             action="https://formsubmit.co/angolkarnikhil@gmail.com"
             method="POST"
           >
-            <Stack p="20px">
+            <Stack p="20px" fontSize="25px">
+            <Heading fontFamily={"inherit"} fontSize="50px">Contact</Heading>
               <Text>Name</Text>
               <Input required name="name" class="form-control" type={"text"} />
               <br />
@@ -76,6 +73,8 @@ import {
                 <Button
                   w="100%"
                   height={"50px"}
+                  colorScheme={"messenger"}
+                  fontSize="25px"
                 >
                   SEND
                 </Button>
