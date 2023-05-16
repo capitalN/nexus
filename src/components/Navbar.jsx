@@ -1,5 +1,12 @@
-import { Center, Flex,Hide, Heading, Stack, Text,HStack,Image,Button } from '@chakra-ui/react'
+import { Center, Flex,Hide, Heading, Stack, Text,HStack,Image,Button,  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,useDisclosure ,Show} from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import React from "react";
 
 export default function Navbar() {
   return (
@@ -8,7 +15,9 @@ export default function Navbar() {
         <Hide below="lg">
           <NavLinks/>
         </Hide>
-        <Hide above="lg">=</Hide>
+        <Show below="lg">
+          <NavDrawer/>
+        </Show>
     </HStack>
   )
 }
@@ -32,3 +41,32 @@ export function NavLinks() {
       </Flex>
     )
   }
+
+
+export function NavDrawer() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef()
+
+  return (
+    <>
+      <Button ref={btnRef} colorScheme='messenger' onClick={onOpen}>
+        =
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement='right'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerBody>
+
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+    </>
+  )
+}
+
+  
