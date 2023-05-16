@@ -1,35 +1,13 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Center,
-  Heading,
-  Image,
-  Stack,
-} from "@chakra-ui/react";
-import React from "react";
-import { Link } from "react-router-dom";
-import { ButtonStyle } from "../styles";
+import { Center, Heading, Stack, Text } from '@chakra-ui/react'
+import React from 'react'
 
 export default function Home() {
   return (
-    <Center
-      bgImage={{
-        base: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6LjRl97iF0HH-IzAoScbHURhxr6W4lWqosB5J1Xd9FMS7PRwf",
-        // md: "https://e1.pxfuel.com/desktop-wallpaper/896/693/desktop-wallpaper-rick-and-morty-psychedelic-rick-and-morty-drip-thumbnail.jpg",
-        lg: "https://wallpaperaccess.com/full/238256.jpg",
-      }}
-      bgSize="cover"
-      bgRepeat={"no-repeat"}
-      w="100vw"
-      h={"100vh"}
-      bgPosition="center"
-    >
-      <Stack position="absolute" top={"40%"} left="25%">
-        <Button {...ButtonStyle} colorScheme="red" as={Link} to="/characters">
-          show characters
-        </Button>
+    <Center minH={"100vh"}>
+      <Stack textAlign={"center"}>
+        <Heading fontSize={"150px"} fontFamily={"serif"} style={{"background": "-webkit-linear-gradient(#35c5af, #0075bc)", "-webkit-background-clip": "text", "-webkit-text-fill-color": "transparent"}}>HELLO</Heading>
+        <Text maxW="500px" fontSize={"25px"}>we are <span style={{fontWeight:"bold"}}> Nexus Media </span>we help business to grow and stand out among  crowd through branding and creative marketing</Text>
       </Stack>
     </Center>
-  );
+  )
 }
