@@ -4,13 +4,12 @@ import { Center, Flex,Hide, Heading, Stack, Text,HStack,Image,Button,  Drawer,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,useDisclosure ,Show} from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+  DrawerCloseButton,useDisclosure ,Show,Link} from '@chakra-ui/react'
 import React from "react";
 
 export default function Navbar() {
   return (
-    <HStack p="10px 20px" position="fixed" top="0" w="100%" justify="space-between">
+    <HStack zIndex={1000} p="10px 20px" position="fixed" w="100%" justify="space-between">
       <Image src="logo.png" w="100px"/>
         <Hide below="lg">
           <NavLinks/>
@@ -25,18 +24,21 @@ export default function Navbar() {
 export function NavLinks() {
     return (
       <Flex p="20px" direction={{base:"column",lg:"row"}} align="center" gap="20px">
-        <Text to="#">
+        <Link href="#">
           Home
-        </Text>
-        <Text to="#">
+        </Link>
+        <Link href="#about">
           About
-        </Text>
-        <Text to="#">
+        </Link>
+        <Link href="#work">
+          Work
+        </Link>
+        <Link href="#projects">
           Projects
-        </Text>
-        <Text to="#">
+        </Link>
+        <Link href="#team">
           Team
-        </Text>
+        </Link>
         <Button colorScheme={"messenger"}>CONTACT</Button>
       </Flex>
     )
@@ -61,7 +63,8 @@ export function NavDrawer() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerBody>
-
+            <Image src="logo.png"/>
+            <NavLinks/>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
