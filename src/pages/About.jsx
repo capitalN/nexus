@@ -13,7 +13,7 @@ export default function About() {
           textAlign="justify"
           h="100%"
         >
-        <Box border={"1px solid"} h="100%" p="20px"  background="radial-gradient(circle, rgba(53,197,175,1) 35%, rgba(0,117,188,1) 100%);" color="white">
+        <Box border={"1px solid"} h="100%" p="20px"  background="#0075bc" color="white">
           <Heading fontSize={{base:"50px", md:"100px"}} p="10px" textAlign="left">who we are?</Heading>
           <Text fontSize={"25px"}>
             We’re not selling “big agency services at small agency prices”. We deliver exceptional design solutions to complex business problems – extremely efficiently and delivered at lightning-fast pace.

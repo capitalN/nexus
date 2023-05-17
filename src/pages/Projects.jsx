@@ -25,24 +25,3 @@ export default function Projects() {
     </Box>
   )
 }
-
-let projects = [
-    {
-      icon: TiDeviceLaptop,
-      title:"Flex Printing",
-      description:
-        "lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    },
-    {
-      icon: TiCodeOutline,
-      title:"Digital Printing",
-      description:
-      "lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum",  
-    },
-    {
-      icon: TiBrush,
-      title:"Designing & Branding",
-      description:
-      "lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum",    
-    },
-  ];
