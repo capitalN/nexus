@@ -58,7 +58,7 @@ import {
             action="https://formsubmit.co/angolkarnikhil@gmail.com"
             method="POST"
           >
-            <Stack p="20px" fontSize="25px">
+            <Stack p="20px" fontSize="25px" bgColor="white" color="black">
             <Heading fontFamily={"inherit"} fontSize="50px">Contact</Heading>
               <Text>Name</Text>
               <Input required name="name" class="form-control" type={"text"} />

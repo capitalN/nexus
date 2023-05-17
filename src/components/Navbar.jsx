@@ -4,12 +4,14 @@ import { Center, Flex,Hide, Heading, Stack, Text,HStack,Image,Button,  Drawer,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,useDisclosure ,Show,Link} from '@chakra-ui/react'
+  DrawerCloseButton,
+  useDisclosure,
+  Show,Link} from '@chakra-ui/react'
 import React from "react";
 
 export default function Navbar() {
   return (
-    <HStack zIndex={1000} p="10px 20px" position="fixed" w="100%" justify="space-between">
+    <HStack _hover={{bgColor:"white"}} zIndex={1000} p="0px 20px" position="fixed" w="100%" justify="space-between">
       <Image src="logo.png" w="100px"/>
         <Hide below="lg">
           <NavLinks/>
@@ -23,7 +25,7 @@ export default function Navbar() {
 
 export function NavLinks() {
     return (
-      <Flex p="20px" direction={{base:"column",lg:"row"}} align="center" gap="20px">
+      <Flex fontWeight="bold" p="20px" direction={{base:"column",lg:"row"}} align="center" gap="20px">
         <Link href="#">
           Home
         </Link>

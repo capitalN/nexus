@@ -3,7 +3,7 @@ import {FaBullhorn,FaPaintBrush,FaPrint } from "react-icons/fa";
 
 export default function Work() {
   return (
-    <Center minH="100vh">
+    <Center>
       <Grid
           gridTemplateColumns={{
             base: "repeat(1, 1fr)",
@@ -22,16 +22,16 @@ export default function Work() {
                 <Center>
                 <Grid gridTemplateRows={"repeat(3, 3fr)"} gap={"10px"} w="100%" h="100%" justify={"space-between"}>
                 {work.map(({ icon, title,description }) => (
-                    <Stack  p="20px" justify={"center"} border={"4px solid #35c5af"}>
-                        <HStack justify={"space-around"}>
-                        <Icon as={icon} fontSize="50px" />
+                    <Stack _hover={{color:"white", background:"#35c5af"}} p="20px" justify={"center"} border={"4px solid #35c5af"}>
+                        <Stack direction={{base:"column", md:"row"}} justify={"space-around"}>
+                        <Icon as={icon} fontSize="100px" />
                           <Box>
                             <Text fontSize={"25px"} fontWeight="bold">{title}</Text>
                             <Text maxW={"400px"} textAlign="justify" fontSize={"25px"}>
                             {description}
                             </Text>
                           </Box>                            
-                        </HStack>
+                        </Stack>
                     </Stack>
                 ))}
                 </Grid>
@@ -44,7 +44,7 @@ export default function Work() {
 let work = [
     {
       icon: FaBullhorn,
-      title:"Markating",
+      title:"Creative Markating",
       description:
         "lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     },
@@ -56,7 +56,7 @@ let work = [
     },
     {
       icon: FaPrint,
-      title:"Printing",
+      title:"Quality Printing",
       description:
       "lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum",    
     },
