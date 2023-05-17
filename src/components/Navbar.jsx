@@ -36,8 +36,8 @@ export function NavLinks() {
         <Link href="#projects">
           Projects
         </Link>
-        <Link href="#team">
-          Team
+        <Link href="#clients">
+          Clients
         </Link>
         <Button colorScheme={"messenger"}>CONTACT</Button>
       </Flex>

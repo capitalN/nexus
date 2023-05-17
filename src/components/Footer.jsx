@@ -14,10 +14,10 @@ import {
   } from "@chakra-ui/react";
   import React from "react";
   import {
-    TiSocialLinkedin,
-    TiSocialGithub,
     TiPhoneOutline,
     TiMail,
+    TiSocialFacebook,
+    TiSocialInstagram
   } from "react-icons/ti";
   
   export default function Footer() {
@@ -88,27 +88,19 @@ import {
   
   export let SocialLinks = [
     {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/in/nikhil-angolkar-62722a19b/",
-      icon: TiSocialLinkedin,
-      colorScheme: "linkedin",
-    },
-    {
-      name: "Email",
-      href: "mailto:angolkarnikhil@gmail.com",
+      href: "mailto:@gmail.com",
       icon: TiMail,
-      colorScheme: "red",
     },
     {
-      name: "Call",
-      href: "tel: 7795334086",
+      href: "tel: 00000",
       icon: TiPhoneOutline,
-      colorScheme: "whatsapp",
     },
     {
-      name: "Github",
-      href: "https://github.com/capitalN",
-      icon: TiSocialGithub,
-      colorScheme: "purple",
+      href: "",
+      icon: TiSocialFacebook,
+    },
+    {
+      href: "",
+      icon: TiSocialInstagram,
     },
   ];
