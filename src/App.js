@@ -11,7 +11,7 @@ import Team from "./pages/Team";
 function App() {
   return (
     <Stack gap="40px">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Home/>
       <Box id="about">
         <About/>
